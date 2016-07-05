@@ -5,3 +5,7 @@ resource "aws_eip" "jump" {
 output "eip" {
   value = [ "${aws_eip.jump.public_ip}" ]
 }
+
+output "allocation_id" {
+  value = [ "${aws_eip.jump.allocation_id}" ]
+}
