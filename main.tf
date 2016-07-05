@@ -7,5 +7,5 @@ output "eip" {
 }
 
 output "allocation_id" {
-  value = [ "${aws_eip.jump.allocation_id}" ]
+  value = "${aws_eip.jump.id}"
 }
